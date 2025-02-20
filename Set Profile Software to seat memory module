@@ -1,0 +1,21 @@
+#include <iostream>
+
+void setProfile(int profile, int &x, int &y, int &z) {
+    if (profile == 1) {
+        x = 30; y = 30; z = 110;
+    } else if (profile == 2) {
+        x = 30; y = 30; z = 105;
+    } else if (profile == 3) {
+        x = 20; y = 20; z = 100;
+    } else if (profile == 4) {
+        x = 30; y = 30; z = 110;
+    }
+}
+
+int main() {
+    int x, y, z;
+    int profile = 4; // seat memory profile selection 
+    setProfile(profile, x, y, z);
+    std::cout << "122122: The plug and play seat memory module has been set successfully to " << "Profile " << profile << std::endl;
+    return 0;
+}
